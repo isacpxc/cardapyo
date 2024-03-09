@@ -1,0 +1,426 @@
+:root{
+  --dark-1: #212121;
+  --dark-2: #303030;
+  --dark-3: #6C6867;
+  --red-c: #BD0412;
+  --white-c: #F7F7F7;
+  --blue-green: #04BAB1;
+  --green-c: #0A9A1F;
+  --blue-c: #00A9ED;
+  --yellow-c: #FFC800;
+}
+
+
+fieldset{
+  border: 0;
+}
+
+.radio-marked{
+  border: 2px solid var(--white-c);
+  border-radius: 4px;
+  /* margin-top: 4px; */
+  padding: 4px;
+}
+
+
+.input-txt-style{
+  color: var(--white-c);
+  padding-left: 4px;
+  outline: none;
+  border: 0px;
+  border-radius: 4px;
+  background-color: var(--red-c);
+}
+
+.form-all{
+  /* background-color: aqua; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.centered-div{
+  display: flex;
+  align-self: center;
+  width: 91.5vw;
+  height: 49vh;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+
+  .input-field{
+    height: 100%;
+    width: 83.4%;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .input-holder-one{
+      flex: 17.25%;
+      display: flex;
+      flex-direction: column;
+    }
+
+      .margin-top{
+        flex: 0.178;
+      }
+
+      .label-input{
+        flex: 0.322;
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--white-c);
+      }
+
+      .input-holder-one input{
+        flex: 0.5;
+        min-width: 0.5;
+      }
+
+    .input-holder-both{
+      flex: 17.25%;
+      /* background-color: rgb(61, 8, 8); */
+      display: flex;
+      flex-direction: column;
+    }
+
+      .hold-both{
+        flex: 0.822;
+        /* background-color: #0A9A1F; */
+        display: flex;
+        justify-content: space-between;
+      }
+      
+        .hold-cep{
+          width: 48.25%;
+          /* background-color: #00A9ED; */
+          display: flex;
+          flex-direction: column;
+        }
+
+          .hold-cep input{
+            flex: 0.822;
+            width: 100%;
+          }
+        
+        
+        .hold-city{
+          width: 43.35%;
+          /* background-color: #FFC800; */
+          display: flex;
+          flex-direction: column;
+        }
+
+          .hold-city input{
+            flex: 0.822;
+            width: 100%;
+          }
+
+
+    /* .input-holder-dist-str{
+      flex: 17.25%;
+      background-color: rgb(110, 76, 76);
+    } */
+
+      .hold-dist{
+        width: 43.35%;;
+        /* background-color: #0A9A1F; */
+        display: flex;
+        flex-direction: column;
+      }
+
+        .hold-dist input{
+          width: 100%;
+          flex: 0.822;
+        }
+
+      .hold-street{
+        width: 48.25%;
+        /* background-color: #0A9A1F; */
+        display: flex;
+        flex-direction: column;
+      }
+
+        .hold-street input{
+          width: 100%;
+          flex: 0.822;
+        }
+
+
+/*     .input-holder-ref{
+      flex: 17.25%;
+      background-color: rgb(186, 121, 121);
+    } */
+
+      .hold-number{
+        width: 22%;
+        /* background-color: #FFC800; */
+        display: flex;
+        flex-direction: column;
+      }
+
+
+        .hold-number input{
+          width: 100%;
+          flex: 0.822;
+        }
+
+      .hold-ref{
+        width: 41.2%;
+        /* background-color: #FFC800; */
+        display: flex;
+        flex-direction: column;
+      }
+
+        .hold-ref input{
+          width: 100%;
+          flex: 0.822;
+        }
+
+        .hold-apt{
+          width: 20%;
+          /* background-color: #FFC800; */
+          display: flex;
+          flex-direction: column;
+        }
+
+          .hold-apt input{
+            width: 100%;
+            flex: 0.822;
+          }
+
+
+
+    .input-holder-margin{
+      flex: 4.9%;
+      /* background-color: rgb(96, 86, 86); */
+    }
+
+    .input-holder-radio-holder{
+      flex: 26.1%;
+      /* background-color: rgb(245, 235, 235); */
+      display: flex;
+      flex-direction: column;
+    }
+
+      .title-hold{
+        flex: 22.7%;
+        display: flex;
+        color: var(--white-c);
+        font-weight: bolder;
+        background-color: var(--dark-2);
+        align-items: center;
+        padding-left: 2px;
+      }
+
+        .title-hold span{
+          background-color: transparent;
+          
+        }
+
+      .radios-holder{
+        flex: 87.3%;
+        display: flex;
+      }
+
+        .cash-radio-holder{
+          /* background-color: #0A9A1F; */
+          height: 100%;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .cash-radio-holder div{
+          flex: 2%;
+        }
+
+        .cash-radio-holder span{
+          flex: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+          color: var(--white-c);
+        }
+
+        .cash-radio-holder input{
+          flex: 50%;
+          accent-color: var(--dark-2);
+        }
+
+        .pix-radio-holder{
+          /* background-color: #FFC800; */
+          height: 100%;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+          .pix-radio-holder div{
+            flex: 2%;
+          }
+
+          .pix-radio-holder span{
+            flex: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            color: var(--white-c);
+          }
+
+          .pix-radio-holder input{
+            flex: 50%;
+            accent-color: var(--dark-2);
+          }
+
+        .card-radio-holder{
+          /* background-color: violet; */
+          height: 100%;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+          .card-radio-holder div{
+            flex: 2%;
+          }
+
+          .card-radio-holder span{
+            flex: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            color: var(--white-c);
+          }
+
+          .card-radio-holder input{
+            flex: 50%;
+            accent-color: var(--dark-2);
+          }
+
+
+.hold-all-log-btns{
+  width: 91.5vw;
+  height: 27vh;
+  /* background-color: #00A9ED; */
+  align-self: center;
+  margin-top: 2vh;
+  border-top: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+  .hold-log{
+    flex: 0.5746;
+    border-radius: 10px;
+    background-color: var(--white-c);
+    display: flex;
+    flex-direction: column;
+  }
+
+    .log{
+      flex: 1;
+      display: flex;
+      background-color: transparent;
+    }
+
+      .span-log-l{
+        flex: 1;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 4px;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        color: var(--dark-1);
+      }
+
+      .span-log-r{
+        flex: 1;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 4px;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        color: var(--dark-1);
+      }
+
+  .hold-btns{
+    flex: 0.336;
+    width: 73.5%;
+    align-self: center;
+    /* background-color: rgb(34, 16, 16); */
+    display: flex;
+    justify-content: space-between;
+  }
+
+    .back-btn{
+      background-color: var(--red-c);
+      flex: 0.4841;
+      border: 0;
+      border-radius: 10px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      display: inline-flex;
+      color: var(--white-c);
+      font-size: 1rem;
+      font-weight: bolder;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+      .back-btn span{
+        width: 100%;
+        background-color: transparent;
+      }
+      
+
+      .back-btn img{
+        width: 27%;
+        background-color: transparent;
+        align-self: center;
+      }
+
+
+
+    .buy-btn{
+      background-color: var(--green-c);
+      flex: 0.4841;
+      border: 0;
+      border-radius: 10px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      display: flex;
+      color: var(--white-c);
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: bolder;
+      flex-direction: column;
+    }
+
+      .buy-btn span{
+        width: 100%;
+        background-color: transparent;
+      }
+
+        button:active{
+          background-color: #00A9ED;
+        }
+
+      
+
+      .buy-btn img{
+        width: 27%;
+        background-color: transparent;
+        align-self: center;
+      }
+
+  .margin-log{
+    flex: 0.0447;
+  }
+
+      

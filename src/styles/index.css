@@ -1,0 +1,87 @@
+/* colors variables */
+:root{
+  --dark-1: #212121;
+  --dark-2: #303030;
+  --dark-3: #6C6867;
+  --red-c: #BD0412;
+  --white-c: #F7F7F7;
+  --blue-green: #04BAB1;
+  --green-c: #0A9A1F;
+  --blue-c: #00A9ED;
+  --yellow-c: #FFC800;
+  --content: '';
+}
+
+/* font */
+@font-face {
+  font-family: Inter;
+  src: url(../font/static/Inter-Regular.ttf);
+}
+
+*{
+  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: var(--dark-3); */
+}
+
+/* Tablets */
+  *{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ 
+
+  .max{
+    height: 100%;
+    width: 100%;
+  }
+
+
+/* Smartphones */
+
+  *{
+    background-color: var(--dark-3);
+  }
+
+  html{
+    min-height: 100vh;
+  }
+
+  body{
+    min-height: 100vh;
+    
+    background-color: #303030;
+  }
+
+  
+
+
+
+.after-green::after{
+  content: var(--content);
+  color: green;
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+}
+
+.after-red::after{
+  content: var(--content);
+  color: red;
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root{
+  max-width: 917px;
+}

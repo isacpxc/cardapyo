@@ -1,0 +1,60 @@
+:root{
+  --dark-1: #212121;
+  --dark-2: #303030;
+  --dark-3: #6C6867;
+  --red-c: #BD0412;
+  --white-c: #F7F7F7;
+  --blue-green: #04BAB1;
+  --green-c: #0A9A1F;
+  --blue-c: #00A9ED;
+  --yellow-c: #FFC800;
+}
+
+/* Other Devices (desktop, tv, etc) */
+
+
+/* Smartphones */
+
+  
+  #hold-all{
+    background-color: var(--dark-1);
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    #logo-store{
+      overflow: hidden;
+      height: 58%;
+      width: 27%;
+      background-color: #04BAB1;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #logo-store img{
+      width: 100%;
+    }
+
+  #page-name{
+    background-color: var(--dark-2);
+    height: 4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    #page-name span{
+      color: white;
+      background-color: transparent;
+      background-color: var(--dark-2);
+      font-weight: 700;
+    }
+
+
+
+
+
