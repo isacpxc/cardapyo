@@ -4,13 +4,17 @@ import "../styles/home.css"
 
 class Home extends React.Component{
   render(){
+    const redirectPlus = ()=>{
+      window.location.href = '/pedidos'
+    }
+
     return (
       <div className="hold-page">
         
         <Header/>
-        <div className="fixed-menu">
+        <a className="fixed-menu" href="/pedidos">
           <img src="/assets/img/icons/cart48.png" alt="" />
-        </div>
+        </a>
           <div className="carrousel">
             <div className="hold-category-box">
               <div className="category-box extend"><span>asddddsa</span></div>
@@ -38,38 +42,41 @@ class Home extends React.Component{
             <div className="category">
               <div className="category-name"><span className="category-text">Category</span></div>
               <div className="content">
-                <div className="image-food">
+                <a className="image-food" href="/detalhes">
                   {/* <img src="/assets/img/foodImg/food-1.jpg" alt="" /> */}
-                  </div>
+                  </a>
                 <div className="desc-food">
-                  <div className="title-food"><span className="category-text">Pizza de Calabresa</span></div>
+                  <div className="title-food"><a className="category-text" href="/detalhes">Pizza de Calabresa</a></div>
                   <div className="desc-food-text"><span className="text-desc">Lorem ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am</span></div>
                   <div className="price-food"><span className="price-food-text">R$ 6,00</span></div>
                 </div>
                 <div className="btn-plus">
-                  <button className="plus-btn"><img src="/assets/img/icons/plus60.png" alt="eye icon to see the product"/></button>
+                  <button className="plus-btn" onClick={(e)=>{
+                    e.preventDefault()
+                    redirectPlus()
+                  }}><img src="/assets/img/icons/plus60.png" alt="eye icon to see the product"/></button>
                 </div>
               </div>
 
               <div className="content">
-                <div className="image-food">
+                <a className="image-food" href="/detalhes">
                   {/* <img src="/assets/img/foodImg/food-1.jpg" alt="" /> */}
-                  </div>
+                  </a>
                 <div className="desc-food">
-                  <div className="title-food"><span className="category-text">Pizza de Calabresa</span></div>
+                  <div className="title-food"><a className="category-text" href="/detalhes">Pizza de Calabresa</a></div>
                   <div className="desc-food-text"><span className="text-desc">Lorem ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am</span></div>
                   <div className="price-food"><span className="price-food-text">R$ 6,00</span></div>
                 </div>
-                <div className="btn-plus">
+                <div className="btn-plus" >
                   <button className="plus-btn"><img src="/assets/img/icons/plus60.png" alt="eye icon to see the product"/></button>
                 </div>
               </div>
               <div className="content">
-                <div className="image-food">
+                <a className="image-food" href="/detalhes">
                   {/* <img src="/assets/img/foodImg/food-1.jpg" alt="" /> */}
-                  </div>
+                  </a>
                 <div className="desc-food">
-                  <div className="title-food"><span className="category-text">Pizza de Calabresa</span></div>
+                  <div className="title-food"><a className="category-text" href="/detalhes">Pizza de Calabresa</a></div>
                   <div className="desc-food-text"><span className="text-desc">Lorem ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am</span></div>
                   <div className="price-food"><span className="price-food-text">R$ 6,00</span></div>
                 </div>
@@ -83,11 +90,11 @@ class Home extends React.Component{
             <div className="category">
               <div className="category-name"><span className="category-text">Category</span></div>
               <div className="content">
-                <div className="image-food">
+                <a className="image-food" href="/detalhes">
                   {/* <img src="/assets/img/foodImg/food-1.jpg" alt="" /> */}
-                  </div>
+                  </a>
                 <div className="desc-food">
-                  <div className="title-food"><span className="category-text">Pizza de Calabresa</span></div>
+                  <div className="title-food"><a className="category-text" href="/detalhes">Pizza de Calabresa</a></div>
                   <div className="desc-food-text"><span className="text-desc">Lorem ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am</span></div>
                   <div className="price-food"><span className="price-food-text">R$ 6,00</span></div>
                 </div>
@@ -97,11 +104,11 @@ class Home extends React.Component{
               </div>
 
               <div className="content">
-                <div className="image-food">
+                <a className="image-food" href="/detalhes">
                   {/* <img src="/assets/img/foodImg/food-1.jpg" alt="" /> */}
-                  </div>
+                  </a>
                 <div className="desc-food">
-                  <div className="title-food"><span className="category-text">Pizza de Calabresa</span></div>
+                  <div className="title-food"><a className="category-text" href="/detalhes">Pizza de Calabresa</a></div>
                   <div className="desc-food-text"><span className="text-desc">Lorem ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am</span></div>
                   <div className="price-food"><span className="price-food-text">R$ 6,00</span></div>
                 </div>
@@ -110,11 +117,11 @@ class Home extends React.Component{
                 </div>
               </div>
               <div className="content">
-                <div className="image-food">
+                <a className="image-food" href="/detalhes">
                   {/* <img src="/assets/img/foodImg/food-1.jpg" alt="" /> */}
-                  </div>
+                  </a>
                 <div className="desc-food">
-                  <div className="title-food"><span className="category-text">Pizza de Calabresa</span></div>
+                  <div className="title-food"><a className="category-text" href="/detalhes">Pizza de Calabresa</a></div>
                   <div className="desc-food-text"><span className="text-desc">Lorem ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am ipsum dolor, sit am</span></div>
                   <div className="price-food"><span className="price-food-text">R$ 6,00</span></div>
                 </div>

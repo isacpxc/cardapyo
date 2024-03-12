@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 3.14%;
+  max-width: 839.6px;
 }
 
   .hold-orders-all{
@@ -33,11 +34,13 @@
       margin-top: 12px;
       display: grid;
       grid-template-columns: 27% 21% 52%;
+      
     }
 
       .image-food{
         border-radius: 10px;
         overflow: hidden;
+        max-height: 100px;
       }
 
         .image-food img{
@@ -48,6 +51,7 @@
         /* background-color: cadetblue; */
         display: flex;
         justify-content: center;
+        max-height: 100px;
       }
 
         .set-btns{
@@ -59,22 +63,21 @@
         }
 
           .add-btn-order{
-            align-self: center;
-            justify-self: center  ;
             background-color: var(--green-c);
             margin: 2px;
             padding: 2px;
             display: flex;
-            height: 90%;
-            width: 90%;
             align-items: center;
             border-radius: 5px;
             border: 0;
+            align-items: center;
+            justify-content: center;
           }
 
             .add-btn-order img{
               width: 100%;
               background-color: transparent;
+              max-width: 37px;
             }
 
 
@@ -97,11 +100,14 @@
             align-items: center;
             border-radius: 5px;
             border: 0;
+            align-items: center;
+            justify-content: center;
           }
 
             .minus-btn-order img{
               width: 100%;
               background-color: transparent;
+              max-width: 37px;
             }
 
       .desc-order{
@@ -113,6 +119,7 @@
         font-size: 0.75rem;
         border: 0;
         border-radius: 10px;
+        max-height: 100px;
       }  
 
     .hold-order-all-fields:last-child{

@@ -238,10 +238,7 @@
             background-color: transparent;
           }
 
-  .phantom-div{
-    height: calc(0.083*100vh);
-    background-color: #00A9ED;
-  }
+
 
 
   @keyframes btnFocus {

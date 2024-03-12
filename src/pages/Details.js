@@ -11,11 +11,11 @@ class Details extends React.Component{
         <div className="hold-all-details">
               <div className="hold-image-ing">
                 <div className="img-detail">
-                  <img src="/assets/img/foodImg/food-1.jpg" alt="" />
+                  {/* <img src="/assets/img/foodImg/food-1.jpg" alt="" /> */}
                 </div>
                   <div className="ing-order">
                     <span className='title-ing'>Ingredientes</span>
-                    <div className='hold-list'>
+                    <div className='hold-list scroll-custom'>
 
                       <label className='li-new'>
                         <div className='hold-checkbox'>
@@ -92,23 +92,23 @@ class Details extends React.Component{
                   <div className='title-category'><span>NOME CAT - radio</span></div>
                   
                   <div className='content-category c-span'>
-                    <span>food</span>
+                    <span className='over-hidden'>food</span>
                     <div className="choose"><input type="radio" name="" id="" /></div>
                   </div>
 
                   <div className='content-category c-span'>
-                    <span>food</span>
+                    <span className='over-hidden'>food</span>
                     <div className="choose"><input type="radio" name="" id="" /></div>
                   </div>
 
                   <div className='content-category c-span'>
-                    <span>food</span>
+                    <span className='over-hidden'>food</span>
                     <div className="choose"><input type="radio" name="" id="" /></div>
                   </div>
                   
                   <div className='title-category'><span>NOME CAT - count</span></div>
                   <div className='content-category c-span'>
-                    <span>food</span>
+                    <span className='over-hidden'>food</span>
                     <div className="hold-count">
                       <div className="hold-minus">
                         <img src="/assets/img/icons/minus48-c-g.png" alt="" />
@@ -121,7 +121,7 @@ class Details extends React.Component{
                   </div>
                   
                   <div className='content-category c-span'>
-                    <span>food</span>
+                    <span className='over-hidden'>food</span>
                     <div className="hold-count">
                       <div className="hold-minus">
                         <img src="/assets/img/icons/minus48-c-g.png" alt="" />
@@ -134,7 +134,7 @@ class Details extends React.Component{
                   </div>
 
                   <div className='content-category c-span'>
-                    <span>food</span>
+                    <span className='over-hidden'>food</span>
                     <div className="hold-count">
                       <div className="hold-minus">
                         <img src="/assets/img/icons/minus48-c-g.png" alt="" />
@@ -147,7 +147,7 @@ class Details extends React.Component{
                   </div>
 
                   <div className='content-category c-span'>
-                    <span>food</span>
+                    <span className='over-hidden'>food</span>
                     <div className="hold-count">
                       <div className="hold-minus">
                         <img src="/assets/img/icons/minus48-c-g.png" alt="" />
@@ -176,9 +176,11 @@ class Details extends React.Component{
                 <div className="hold-btns-order">
                   <button className="back-btn" onClick={(e)=>{
                       e.preventDefault();
+                      window.location.href = '/'
                     }}><span>Voltar</span> <img src="/assets/img/icons/left50.png" alt="" /></button>
                     <button type="submit" className="buy-btn" onClick={(e=>{
                       e.preventDefault();
+                      window.location.href = '/pedidos'
                     })}><span>Adicionar</span> <img src="/assets/img/icons/plus60.png" alt="" /></button>
                 </div>
               

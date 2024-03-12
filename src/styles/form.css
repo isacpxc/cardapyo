@@ -46,6 +46,7 @@ fieldset{
   width: 91.5vw;
   height: 49vh;
   flex-direction: column;
+  max-width: 839.6px;
   /* background-color: blue; */
 }
 
@@ -312,6 +313,7 @@ fieldset{
   border-top: 1px solid #000;
   display: flex;
   flex-direction: column;
+  max-width: 839.6px;
 }
 
   .hold-log{
@@ -371,6 +373,7 @@ fieldset{
       font-weight: bolder;
       flex-direction: column;
       justify-content: center;
+      max-width: 200px;
     }
 
       .back-btn span{
@@ -400,6 +403,7 @@ fieldset{
       font-size: 1rem;
       font-weight: bolder;
       flex-direction: column;
+      max-width: 200px;
     }
 
       .buy-btn span{

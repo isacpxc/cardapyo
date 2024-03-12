@@ -143,9 +143,12 @@ class Nform extends React.Component{
                 <div className="hold-btns">
                 <button className="back-btn" onClick={(e)=>{
                     e.preventDefault();
+                    window.location.href = '/pedidos'
                 }}><span>Voltar</span> <img src="/assets/img/icons/left50.png" alt="" /></button>
                 <button type="submit" className="buy-btn" onClick={(e=>{
                     e.preventDefault();
+                    alert("Enviado!!! Você será redirecionado!")
+                    window.location.href = '/'
                 })}><span>Enviar</span> <img src="/assets/img/icons/right50.png" alt=""  /></button>
                 </div>
             </div>

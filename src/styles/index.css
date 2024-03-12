@@ -85,3 +85,34 @@ body{
 #root{
   max-width: 917px;
 }
+
+.scroll-custom::-webkit-scrollbar{
+  width: 10px;
+}
+
+.scroll-custom::-webkit-scrollbar-track {
+  background: #353333;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb:hover {
+  background: #ede7e7;
+}
+
+.over-hidden{
+  overflow: hidden !important;
+}
+
+
+@keyframes focusScroll {
+  0%{
+    background-color: #BD0412;
+  }
+  100%{
+    background-color: #eb4040;
+  }
+}
